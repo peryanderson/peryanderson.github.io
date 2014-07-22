@@ -1,0 +1,29 @@
+#header {
+	font-family: "Arial Black", Gadget, sans-serif;
+    text-align:center;
+    text-decoration:underline;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 2px 2px 2px 2px; 
+    font-size: 45px;   
+    color: white;
+}
+
+#index {    
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-align:center;
+    margin: 10px; 
+    padding: 2px; 
+    font-size: 35px; 
+    border: 8px solid black; 
+    border-style: double; ;}
+
+body {background: #666666}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
