@@ -1,0 +1,49 @@
+h1, h2, h3, h4, div {
+margin: 0 auto;
+padding: 0;
+}
+
+h1 {
+font-size: 5em;
+}
+.header {
+background-color: #005;
+color: #ccf;
+}
+@media screen and (max-width: 480px) {
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: #99ccFF;
+  float: left;
+  padding: 5%
+}
+}
+@media screen and (max-width: 900px) {
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: #99ccFF;
+}
+}
+
+@media screen and (min-width: 900px) {
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: #99ccFF;
+}
+.wrapper {
+width:100%;
+overflow: auto;
+}
+.responsive-design, .fluid-layouts, .your-conclusion{
+width: 30%;
+float: left;
+padding: 1%;
+}
+.references {
+clear: both;
+}
+}
