@@ -1,49 +1,77 @@
-h1, h2, h3, h4, div {
-margin: 0 auto;
-padding: 0;
-}
 
-h1 {
-font-size: 5em;
-}
-.header {
-background-color: #005;
-color: #ccf;
-}
-@media screen and (max-width: 480px) {
-.container {
-  width: 100%;
-  margin: 0 auto;
-  background: #99ccFF;
-  float: left;
-  padding: 5%
-}
-}
-@media screen and (max-width: 900px) {
+html, body, form, fieldset, legend { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-  background: #99ccFF;
-}
+.header, .reflection, .references {
+  padding: 1%;
 }
 
 @media screen and (min-width: 900px) {
-.container {
-  width: 100%;
-  margin: 0 auto;
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    width:100%;
+    overflow: auto;
+  }
+
+  .responsive-design, .fluid-layouts, .your-conclusion{
+    width: 30%;
+    float: left;
+    padding: 1%;
+  }
+
+  .references {
+    clear: both;
+    }
+  h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 900px) { 
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .wrapper {
+    padding: 1%;
+  }
+  .fluid-layouts, .your-conclusion{
+    padding-top: 3%;
+  }
+  h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  h1 {
+    font-size: 3em;
+  }
+}
+
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+body {
   background: #99ccFF;
 }
-.wrapper {
-width:100%;
-overflow: auto;
+
+.header {
+  background-color: #005;
+  color: #ccf;
 }
-.responsive-design, .fluid-layouts, .your-conclusion{
-width: 30%;
-float: left;
-padding: 1%;
+.header h3, .header h4 {
+  color: #bbf;
 }
-.references {
-clear: both;
+
+.reflection {
+  font-style: italic;
 }
+
+.reflection p {
+  font-size: 0.8em;
 }
