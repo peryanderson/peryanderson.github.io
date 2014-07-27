@@ -1,29 +1,117 @@
-#header {
-	font-family: "Arial Black", Gadget, sans-serif;
-    text-align:center;
-    text-decoration:underline;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    padding: 2px 2px 2px 2px; 
-    font-size: 45px;   
-    color: white;
+
+
+html,body,form,fieldset,legend {
+margin:0;
+padding:0;
 }
 
-#index {    
-	font-family: "Arial Black", Gadget, sans-serif;
-	text-align:center;
-    margin: 10px; 
-    padding: 2px; 
-    font-size: 35px; 
-    border: 8px solid black; 
-    border-style: double; ;}
+h1,h2,h3,h4,h5,h6,p {
+margin:0;
+}
+p{
+    text-indent:50px;
+}
 
-body {background: #666666}
+h1,h2,h3,h4,h5,h6 {
+text-align:center;
+}
+
+h6{
+    font-family: "Brush Script MT", cursive;
+}
+
+h2,h3,h4,h5 {
+text-decoration:underline;
+}
+
+.picture {
+float:right;
+margin-bottom: 400px;
+padding:0;
+}
+
+aside {
+position:fixed;
+width:12%;
+height:100%;
+background-color:#3189AD;
+}
+
+#title {
+font-family:"Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+font-size:50px;
+}
+
+#blogs {
+margin-top:25%;
+margin-bottom:30%;
+}
+
+.wrapper {
+position:relative;
+left:12%;
+width:88%;
+}
+
+ul {
+margin:0;
+}
+
+li {
+margin-right:40px;
+display:inline;
+}
+
+body {
+background:#99ccFF;
+}
+
+nav {
+font-family:"Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+font-color:black;
+list-style-type:none;
+font-size:25px;
+margin:0;
+padding:0;
+background:#3189AD;
+text-align:center;
+}
+
+header {
+padding-top:10px;
+text-align:center;
+background: #2673AB;
+}
+
+section {
+font-family:TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+background:#99ccFF;
+padding:10px;
+margin:0;
+border:0;
+}
+
+article {
+font-family:TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+padding:10px;
+background:#99ccFF;
+}
 
 a:link {
-    color: white;
+border-bottom:0;
+color:black;
+text-decoration: underline;
+}
+a:visited {
+border-bottom:0;
+color:black;
+text-decoration:underline;
+}
+a:hover {
+border-bottom:0;
+color:white;
+text-decoration:underline;
 }
 
-a:visited {
-    color: white;
-}
+
+
