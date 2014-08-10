@@ -1,0 +1,31 @@
+<html><head>
+      <title>Technical Blog 2</title>
+      <link rel="stylesheet" href="../stylesheets/blog.css">
+   </head>
+   <body>
+      <div class="container">
+         <header class="blog_title">
+            <h1>My Thoughts on CSS</h1>
+            <h3>Week 2 Technical Blog</h3>
+            <h4><a href="../index.html">By Perry Anderson</a></h4>
+            <h4></h4>
+         </header>
+         <h2 class="article_title">Margins, Borders, and Padding</h2>
+         
+         <p class="article_content">
+           For my technical blog this week I decided to reaserch a method I had never before encountered, namely enumerable#group_by. While this method initially appears complex, it is actually a relatively simple and useful method.<br>
+            Let&#39;s begin by addressing the first part of this function, the word enumerable. It is synonymous with the mathematical term countable. If a set of elements can be indexed by integer, then it is countable. So, the set of integers between one and ten, for example, is countable. The first number is one, the second two, and so on. However, the set of all numbers, not just integers, between one and ten is not countable. When referencing values in an uncountable set we cannot refer to their exact position within the set by an integer. We can say for example, that three point three does exist in this set, but we cannot assign an index to its position. <br>
+            What this all means to the method is that it only can act on objects with a defined number of members. The group_by method does pretty much exactly what it sounds like. It is called on an object and followed by a block which it executes. The output of the function is a hash, where the keys are the result of the block and the values are the corresponding members of the object it was called on. <br>
+            For instance <br>
+            ["apple", "orange", "lemon"].group_by{|i| i.include?("a")}<br>
+            will return the hash {true => "["apple", "orange"] , false => ["lemon"]}<br>
+            This is useful for processing large arrays or data sets, you can create a hash that groups specific types of objects, or values within a certain range, or in the example fruits containing the letter a. The results of the block do not have to be true or false, it can group by the results of any block you call. 
+
+         </p>
+
+         <footer id="footer">
+            <a href="../index.html">Back to index</a>
+         </footer>
+      </div>
+   
+</body></html>
