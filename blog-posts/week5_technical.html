@@ -1,0 +1,29 @@
+<html><head>
+      <title>Technical Blog 5</title>
+      <link rel="stylesheet" href="../stylesheets/blog.css">
+   </head>
+   <body>
+      <div class="container">
+         <header class="blog_title">
+            <h1>My Thoughts on Ruby Classes</h1>
+            <h3>Week 5 Technical Blog</h3>
+            <h4><a href="../index.html">By Perry Anderson</a></h4>
+            <h4></h4>
+         </header>
+         <h2 class="article_title">Classes and their Function</h2>
+         
+         <p class="article_content">
+          In Ruby, everything is an object.  Objects with similar properties attached to them, on which the same methods will be performed, can be grouped into classes. Why and When to use classes comes down to reducing what would otherwise be incredibly tedious repetition. Ruby comes with some very handy built in classes, for example strings and integers. If every time you wanted to use a string you had to define every method that could be called on that string, capitalization, checking the length, and so on, it would be very hard to actually make progress in a program without making it a jumbled mess. <br>
+         Classes cleaned up this mess by defining the similar properties of common objects, or instance variables, and ways in which it makes sense to manipulate those objects, or instance methods. Both belong to the class and operate within it. Classes can also be used to model real world objects, for example a pizza.<br>
+         We could define a class called pizza by simply declaring class Pizza in ruby. Then in the initialize method we could define that every pizza has a type of crust, sauce, cheese, toppings, and has a radius of some integer length. These variables then belong to the pizza class. We could also define a method for pizzas that takes the radius of the pizza and returns to us how many slices we should cut it into, let&#39;s call it slice_number. The wonderful thing about classes is if we want to now declare a pie class, and we want a slice_number method within that class that operates on pies, it doesn&#39;t have to behave the same way as it does on the pizza class. For instance we could say that a twelve inch pizza should be sliced into six slices in the pizza class, but in the pie class we could say a twelve inch pie should be sliced into eight pieces. Now we have a method that can be called on members of either class, but gives us results that make sense for that class, because it operates in different contexts. That is what classes are for, efficiency in a sensible manner. 
+
+
+
+         </p>
+
+         <footer id="footer">
+            <a href="../index.html">Back to index</a>
+         </footer>
+      </div>
+   
+</body></html>
