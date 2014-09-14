@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cheatsheet</title>
+    <link rel="stylesheet" href="stylesheets/cheatsheet.css">
+</head>
+<div class="container">
+
+    <body>
+        <header class="title">
+            <h1>Ruby Enumerables Cheatsheet</h1>
+            <h4><a href="../index.html">By Perry Anderson</a>
+                <h4>
+        </header>
+        <table align="center">
+            <tr>
+                <th>Methods</th>
+                <th>Function</th>
+            </tr>
+            <tr>
+                <td>all? [{ |obj| block } ]</td>
+                <td>Checks to see if all elements of a block return true values</td>
+            </tr>
+            <tr>
+                <td>any? [{ |obj| block }]</td>
+                <td>Checks to see if any elements of a block return true values</td>
+            </tr>
+            <tr>
+                <td>chunk(initial_state) { |elt, state| ... }</td>
+                <td>Groups items in the block with the same succesive return values together</td>
+            </tr>
+            <tr>
+                <td>collect { |obj| block }</td>
+                <td>Collects the results of calling the block on an object in an array</td>
+            </tr>
+            <tr>
+                <td>cycle(n=nil) { |obj| block }</td>
+                <td>Applies the block to the object n times, if n is nil loops forever</td>
+            </tr>
+            <tr>
+                <td>drop(n)</td>
+                <td>Drops first n elements from an object, and returns the rest.</td>
+            </tr>
+            <tr>
+                <td>each_cons(n) { ... }</td>
+                <td>Iterates the given block for each array of consecutive <n> elements. If no block is given, returns an enumerator.</td>
+            </tr>
+            <tr>
+                <td>each_entry { |obj| block }</td>
+                <td>Calls block once for each element in self, passing that element as a parameter, converting multiple values from yield to an array.</td>
+            </tr>
+    			<td>each_slice(n) { ... }</td>
+                <td>Iterates the given block for each slice of <n> elements. If no block is given, returns an enumerator.</td>
+            </tr>
+            <tr>
+                <td>each_with_index(*args) { |obj, i| block }</td>
+                <td>Calls block with two arguments, the item and its index, for each item in enum. Given arguments are passed through to each().</td>
+            </tr>
+            <tr>
+                <td>each_with_object(obj) { |(*args), memo_obj| ... }</td>
+                <td>Iterates the given block for each element with an arbitrary object given, and returns the initially given object.</td>
+            </tr>
+            <tr>
+                <td>entries(*args)</td>
+                <td>Returns an array containing the items in enum.</td>
+            </tr>
+            <tr>
+                <td>find(ifnone = nil) { |obj| block } </td>
+                <td>Returns an array containing all elements of enum for which the given block returns a true value.</td>
+            </tr>
+                <td>first(n)</td>
+                <td>Returns the first element, or the first n elements, of the enumerable. </td>
+            </tr>
+            <tr>
+                <td>flat_map { |obj| block }</td>
+                <td>Returns a new array with the concatenated results of running block once for every element in enum.</td>
+            </tr>
+            <tr>
+                <td>grep(pattern) { |obj| block } </td>
+                <td>Returns an array of every element in enum for which pattern is equal to element. If block is included it is passed on each of these elements.</td>
+            </tr>
+            <tr>
+                <td>group_by { |obj| block }</td>
+                <td>Returns a hash where the keys are the evaluated result from the block and the values are arrays of elements in the collection that correspond to the key.</td>
+            </tr>
+            <tr>
+                <td>include?(obj)</td>
+                <td>Returns true if any member of enum equals obj. Equality is tested using ==.</td>
+            </tr>
+                <td>inject(initial) { |memo, obj| block }</td>
+                <td>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator. Block and intial values are optional</td>
+            </tr>
+            <tr>
+                <td>lazy</td>
+                <td>Returns a lazy enumerator, whose methods map/collect, flat_map/collect_concat, select/find_all, reject, grep, zip, take, #take_while, drop, and #drop_while enumerate values only on an as-needed basis. However, if a block is given to zip, values are enumerated immediately.</td>
+            </tr>
+            <tr>
+                <td>map { |obj| block }</td>
+                <td>Returns a new array with the results of running block once for every element in enum.</td>
+            </tr>
+            <tr>
+                <td>max { |a, b| block }</td>
+                <td>Returns the object in enum with the maximum value. Block is optional way to specifiy how to organize the enum.</td>
+            </tr>
+            <tr>
+                <td>max_by { |obj| block }</td>
+                <td>Returns the object in enum that gives the maximum value from the given block.</td>
+            </tr>
+			<tr>
+                <td>min, min_by</td>
+                <td>What they sound like, #max in reverse</td>
+            </tr>
+            <tr>
+                <td>member?(obj)</td>
+                <td>Checks to see if any elements of a block return true values</td>
+            </tr>
+ 			<tr>
+                <td>any? [{ |obj| block }]</td>
+                <td>Checks to see if any elements of a block return true values</td>
+            </tr>
+            <tr>
+                <td>any? [{ |obj| block }]</td>
+                <td>Checks to see if any elements of a block return true values</td>
+            </tr>
+			<tr>
+                <td>any? [{ |obj| block }]</td>
+                <td>Checks to see if any elements of a block return true values</td>
+            </tr>
+            <tr>
+                <td>any? [{ |obj| block }]</td>
+                <td>Checks to see if any elements of a block return true values</td>
+            </tr>
+        </table>
+
+
+
+        <footer id="footer">
+        	<p>Source: W3schools</p>
+            <a href="../index.html">Back to index</a>
+        </footer>
+    </body>
+</div>
+
+</HTML>
