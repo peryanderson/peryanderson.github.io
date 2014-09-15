@@ -44,14 +44,16 @@
             </tr>
             <tr>
                 <td>each_cons(n) { ... }</td>
-                <td>Iterates the given block for each array of consecutive <n> elements. If no block is given, returns an enumerator.</td>
+                <td>Iterates the given block for each array of consecutive
+                    <n>elements. If no block is given, returns an enumerator.</td>
             </tr>
             <tr>
                 <td>each_entry { |obj| block }</td>
                 <td>Calls block once for each element in self, passing that element as a parameter, converting multiple values from yield to an array.</td>
             </tr>
-    			<td>each_slice(n) { ... }</td>
-                <td>Iterates the given block for each slice of <n> elements. If no block is given, returns an enumerator.</td>
+            <td>each_slice(n) { ... }</td>
+            <td>Iterates the given block for each slice of
+                <n>elements. If no block is given, returns an enumerator.</td>
             </tr>
             <tr>
                 <td>each_with_index(*args) { |obj, i| block }</td>
@@ -66,18 +68,18 @@
                 <td>Returns an array containing the items in enum.</td>
             </tr>
             <tr>
-                <td>find(ifnone = nil) { |obj| block } </td>
+                <td>find(ifnone = nil) { |obj| block }</td>
                 <td>Returns an array containing all elements of enum for which the given block returns a true value.</td>
             </tr>
-                <td>first(n)</td>
-                <td>Returns the first element, or the first n elements, of the enumerable. </td>
+            <td>first(n)</td>
+            <td>Returns the first element, or the first n elements, of the enumerable.</td>
             </tr>
             <tr>
                 <td>flat_map { |obj| block }</td>
                 <td>Returns a new array with the concatenated results of running block once for every element in enum.</td>
             </tr>
             <tr>
-                <td>grep(pattern) { |obj| block } </td>
+                <td>grep(pattern) { |obj| block }</td>
                 <td>Returns an array of every element in enum for which pattern is equal to element. If block is included it is passed on each of these elements.</td>
             </tr>
             <tr>
@@ -88,12 +90,12 @@
                 <td>include?(obj)</td>
                 <td>Returns true if any member of enum equals obj. Equality is tested using ==.</td>
             </tr>
-                <td>inject(initial) { |memo, obj| block }</td>
-                <td>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator. Block and intial values are optional</td>
+            <td>inject(initial) { |memo, obj| block }</td>
+            <td>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator. Block and intial values are optional</td>
             </tr>
             <tr>
                 <td>lazy</td>
-                <td>Returns a lazy enumerator, whose methods map/collect, flat_map/collect_concat, select/find_all, reject, grep, zip, take, #take_while, drop, and #drop_while enumerate values only on an as-needed basis. However, if a block is given to zip, values are enumerated immediately.</td>
+                <td>Returns a lazy enumerator, whose methods map/collect, flat_map/collect_concat, select/find_all, reject, grep, zip, take, #take_while, drop, and #drop_while enumerate values only on an as-needed basis. However, if a block is given to zip, values are enumerated immediately</td>
             </tr>
             <tr>
                 <td>map { |obj| block }</td>
@@ -105,9 +107,9 @@
             </tr>
             <tr>
                 <td>max_by { |obj| block }</td>
-                <td>Returns the object in enum that gives the maximum value from the given block.</td>
+                <td>Returns the object in enum that gives the maximum value from the given block</td>
             </tr>
-			<tr>
+            <tr>
                 <td>min, min_by</td>
                 <td>What they sound like, #max in reverse</td>
             </tr>
@@ -115,28 +117,74 @@
                 <td>member?(obj)</td>
                 <td>Checks to see if any elements of a block return true values</td>
             </tr>
- 			<tr>
-                <td>any? [{ |obj| block }]</td>
-                <td>Checks to see if any elements of a block return true values</td>
-            </tr>
             <tr>
-                <td>any? [{ |obj| block }]</td>
-                <td>Checks to see if any elements of a block return true values</td>
+                <td>minmax { |a, b| block }]</td>
+                <td>Returns two elements array which contains the minimum and the maximum value in the enumerable</td>
             </tr>
-			<tr>
-                <td>any? [{ |obj| block }]</td>
-                <td>Checks to see if any elements of a block return true values</td>
-            </tr>
-            <tr>
-                <td>any? [{ |obj| block }]</td>
-                <td>Checks to see if any elements of a block return true values</td>
-            </tr>
+            
+                <tr>
+                    <td>none? [{ |obj| block }]</td>
+                    <td>Opposite of #any</td>
+                </tr>
+                <tr>
+                    <td>one? [{ |obj| block }]</td>
+                    <td>Passes each element of the collection to the given block. The method returns true if the block returns true exactly once</td>
+                </tr>
+                <tr>
+                    <td>partition { |obj| block }</td>
+                    <td>Returns two arrays, the first containing the elements of enum for which the block evaluates to true, the second containing the rest</td>
+                </tr>
+                <tr>
+                    <td>reduce(initial, sym)</td>
+                    <td>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator</td>
+                </tr>
+                <tr>
+                    <td>reject { |obj| block }</td>
+                    <td>Returns an array for all elements of enum for which the given block returns false</td>
+                </tr>
+                <tr>
+                    <td>reverse_each(*args) { |item| block }</td>
+                    <td>Builds a temporary array and traverses that array in reverse order</td>
+                </tr>
+                <tr>
+                    <td>select { |obj| block }</td>
+                    <td>Returns an array containing all elements of enum for which the given block returns a true value.</td>
+                </tr>
+                <tr>
+                    <td>slice_before(pattern)</td>
+                    <td>Creates an enumerator for each chunked elements. The beginnings of chunks are defined by pattern and the block</td>
+                </tr>
+                <tr>
+                    <td>sort { |a, b| block }</td>
+                    <td>Returns an array containing the items in enum sorted</td>
+                </tr>
+                <tr>
+                    <td>sort_by { |obj| block }</td>
+                    <td>Sorts enum using a set of keys generated by mapping the values in enum through the given block</td>
+                </tr>
+                <tr>
+                    <td>take(n) </td>
+                    <td>Returns first n elements from enum</td>
+                </tr>
+                <tr>
+                    <td>to_a(*args)</td>
+                    <td>Returns an array containing the items in enum.</td>
+                </tr>
+                <tr>
+                    <td>to_h(*args)]</td>
+                    <td>Returns the result of interpreting enum as a list of [key, value] pairs.</td>
+                </tr>
+                <tr>
+                    <td>zip(arg, ...) { |arr| block }</td>
+                    <td>Cakes one element from enum and merges corresponding elements from each args. This generates a sequence of n-element arrays, where n is one more than the count of arguments</td>
+                </tr>
+              
         </table>
 
-
-
         <footer id="footer">
-        	<p>Source: W3schools</p>
+            <p>Source:
+                <a href="http://ruby-doc.org/core-2.1.2/Enumerable.html#method-i-find" W3schools </a>
+            </p>
             <a href="../index.html">Back to index</a>
         </footer>
     </body>
